@@ -8,6 +8,7 @@ def hello_amqp():
 
     channel.basic_publish(exchange='',
                         routing_key='hello',
+                        # TODO #1 - @lynma01 
                         body='Hello World!')
 
     print("[x] Sent 'Hello World!'")
